@@ -1,2 +1,9 @@
-# POO_2024_enzo_enrico
-Repo for Object Oriented Programming, also kinda learning Java
+# Object Oriented Programming - PUCPR 2024
+Repo dedicated to OOP assignments in Uni.
+Projects written mostly in Java
+
+TODO:
+
+- [ ] Learn Java
+
+## Table of contents
