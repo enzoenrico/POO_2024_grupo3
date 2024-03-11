@@ -120,8 +120,8 @@ class Runner {
      * ID, username, and
      * balance to the user.
      */
-    public static void listaccounts() {
-        ArrayList<Player> data = users;
+    public static ArrayList<Account> listaccounts() {
+        ArrayList<Account> data = users;
         // sorts the data before displaying it to the user
         quickSort(data, 0, data.size() - 1);
         return data;

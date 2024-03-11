@@ -81,26 +81,20 @@ class Account {
      *         method to match what is actually
      *         being returned.
      */
-    public int deposit(int amount) {
+    public boolean deposit(int amount) {
         this.balance += amount;
         return true;
     }
-
     /**
-     * This function deducts a specified amount from the balance if sufficient funds
-     * are available
-     * and returns true, otherwise it returns false.
+     * The function `withdraw` in Java checks if the amount to be withdrawn is less than or equal to
+     * the balance and updates the balance accordingly, returning true if successful and false
+     * otherwise.
      * 
-     * @param amount It looks like there is a typo in the code. The parameter name
-     *               is misspelled as
-     *               "ammount" instead of "amount". To fix this, you should correct
-     *               the spelling of the parameter in
-     *               the if statement.
-     * @return The method `getMoney` returns a boolean value. It returns `true` if
-     *         the specified amount
-     *         can be deducted from the balance (assuming `balance` is a class
-     *         variable accessible to the
-     *         method) and `false` if the amount is greater than the balance.
+     * @param amount Amount is the parameter representing the amount of money that a user wants to
+     * withdraw from their account.
+     * @return The method `withdraw` returns a boolean value. It returns `true` if the withdrawal was
+     * successful (i.e., if the amount is less than or equal to the balance), and it returns `false` if
+     * the withdrawal was not successful (i.e., if the amount is greater than the balance).
      */
     public boolean withdraw(int amount) {
         if (amount <= balance) {
